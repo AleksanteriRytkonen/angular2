@@ -1,0 +1,48 @@
+<h1>Skills</h1>
+<div class="row">
+  <div class="col">
+    <h4>Programming languages</h4>
+    <ul>
+      <li (click)="skill('html & CSS', 90)">html & CSS</li>
+      <li (click)="skill('Java', 60)">Java</li>
+      <li (click)="skill('Javascript', 70)">Javascript</li>
+      <li (click)="skill('Python', 50)">Python</li>
+      <li (click)="skill('PHP', 40)">PHP</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h4>Frameworks</h4>
+    <li>Angular 2</li>
+    <li>Django</li>
+    <li>Ionic 2</li>
+    <li>express.js</li>
+    <li>Spring</li>
+    <li>bootstrap</li>
+    <li>foundation 6</li>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h4>Softwares</h4>
+    <ul>
+      <li>Adobe Photoshop</li>
+      <li>Adobe illustrator</li>
+      <li>Jetbrains products</li>
+      <li>Eclipse</li>
+      <li>Git</li>
+      <li>Atom</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h4>Operating systems</h4>
+    <ul>
+      <li>Windows: xp, vista, 7, 8, 8.1, 10</li>
+      <li>Linux: debian, ubuntu, xubuntu, centOS</li>
+    </ul>
+  </div>
+</div>
+<h1 style="text-align:center;">Skill level:</h1>
+<h3 style="text-align:center;">{{skillName}}</h3>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" [style.width]="skillValue + '%'" aria-valuemin="0" aria-valuemax="100">{{skillValue}}%</div>
+</div>
