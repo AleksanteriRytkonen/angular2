@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
+  languages:string[] = ['html', 'CSS', 'Javascript', 'Java', 'Python', 'PHP'];
+  frameworks:string[] = ['Angular 2', 'Django', 'Ionic 2', 'express.js', 'Spring', 'bootstrap 3', 'foundation 6'];
+  softwares:string[] = ['Adobe Photoshop', 'Adobe illustrator', 'Jetbrains products', 'Eclipse', 'Git', 'Atom'];
+  operatingSystems:string[] = ['Windows XP', 'Windows Vista', 'Windows 8.1', 'Windows 10', 'Debian', 'Ubuntu', 'Xubuntu', 'CentOS'];
   skillName:string = "";
   skillValue:number = 0;
 
@@ -16,9 +20,9 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
   }
 
-  skill(name:string, value:number){
+  skill(name:string){
     this.skillName = name;
-    this.skillValue = value;
+    //this.skillValue = value;
   }
 
 }
