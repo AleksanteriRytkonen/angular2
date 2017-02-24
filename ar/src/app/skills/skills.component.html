@@ -13,7 +13,17 @@
     </ul>
   </div>
   <div class="col">
-    moi
+    <button (click)="onGetData()">Haloo</button>
+    <ul>
+      <li *ngFor="let item of items">{{item.username}}</li>
+    </ul>
+    <hr>
+    <label for="username">Username</label>
+    <input type="text" id="username" #username>
+    <hr>
+    <label for="email">Email</label>
+    <input type="text" id="email" #email>
+    <button (click)="onSubmit(username.value, email.value)">Submit</button>
   </div>
 </div>
 <div class="row">
